@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_landing"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:src="@drawable/landing"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/landing_content"
+            android:textColor="#DFE2E7"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_20sdp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_40sdp">
+        <LinearLayout
+            android:id="@+id/ll_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="0.5"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:background="@drawable/rectangle_signin"/>
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="0.5"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/rectangle_signin"/>
+
+        </LinearLayout>
+
+           <Button
+               android:id="@+id/btn_meeting"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp"
+               android:layout_marginLeft="@dimen/_30sdp"
+               android:layout_marginRight="@dimen/_30sdp"
+               android:text="Start a Meeting"
+               android:layout_above="@+id/ll_reg"
+               android:textColor="@color/white"
+               android:layout_marginBottom="@dimen/_30sdp"
+               android:textSize="@dimen/_14sdp"
+               android:textAllCaps="false"
+               android:fontFamily="@font/montserrat_regular"
+               android:background="@drawable/rectangle_meeting"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

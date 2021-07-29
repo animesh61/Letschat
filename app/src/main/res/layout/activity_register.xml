@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_28sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your details"
+            android:textColor="#9097A5"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:hint="First Name"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Last Name"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Email Address"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:textColor="#1D293F"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_28sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with email"
+            android:textColor="#9097A5"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:hint="Email Address"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Password"
+            android:textColor="#9097A5"
+            android:textSize="@dimen/_14sdp"
+            android:drawableRight="@drawable/ic_password"
+            android:paddingRight="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#9097A5"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_regular"
+            />
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or, Sign in with"
+            android:textColor="#1D293F"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_google"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="Continue with Facebook"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/rectangle_facebook"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1D293F"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
