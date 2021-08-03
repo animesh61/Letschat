@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join a Meeting"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_video">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Join with Meeting Id"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#9097A5"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="#9097A5"
+                android:background="@drawable/rectangle_email"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Join with personal link name"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#9097A5"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="#9097A5"
+                android:background="@drawable/rectangle_email"/>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Steve Smith"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you have any meeting invitation link, tap on the link to join."
+            android:textColor="#A4A4A4"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/rectangle_video"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't connect to audio"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/rectangle_video"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turn off my video"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_20sdp">
+            <Button
+                android:id="@+id/btn_join_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Join Meeting"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_meeting"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

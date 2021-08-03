@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_endmeeting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="End Meeting for All"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_meeting"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="End Meeting"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_signin"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#22B0FC"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

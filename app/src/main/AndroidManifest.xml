@@ -24,6 +24,12 @@
         <activity android:name=".ui.forgotpassword.EmailActivation"></activity>
         <activity android:name=".ui.forgotpassword.ChangePasswordActivity"></activity>
         <activity android:name=".ui.forgotpassword.HomeActivity"></activity>
+        <activity android:name=".ui.startmetting.Startmeeting"></activity>
+        <activity android:name=".ui.startmetting.Endmeeting"></activity>
+        <activity android:name=".ui.startmetting.JoinMeeting"></activity>
+        <activity android:name=".ui.startmetting.Backtomeeting"></activity>
+        <activity android:name=".ui.startmetting.ScheduleMeeting"></activity>
+        <activity android:name=".ui.Contact"/>
 
 
 
