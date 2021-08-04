@@ -56,6 +56,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <LinearLayout
+                android:id="@+id/ll_back_to_meeting"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_140sdp"
                 android:layout_marginTop="@dimen/_20sdp"

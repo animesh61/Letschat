@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Meeting"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_notification"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_video">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Personal Meeting Id"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#22B0FC"
+            android:fontFamily="@font/montserrat_regular"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="123 456 789"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Start"
+                android:textAllCaps="true"
+                android:background="@drawable/rectangle_calander"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#22B0FC"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="invite"
+                android:textAllCaps="true"
+                android:background="@drawable/rectangle_calander"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#22B0FC"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="edit"
+                android:textAllCaps="true"
+                android:background="@drawable/rectangle_calander"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#22B0FC"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Scheduled Meeting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_video">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="09 jun\n 10:30 PM"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/rectangle_test_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Meeting\n123 456 789"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:background="@drawable/rectangle_calander"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="#22B0FC"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_video">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="09 jun\n 10:30 PM"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/rectangle_test_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Meeting\n123 456 789"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:background="@drawable/rectangle_calander"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="#22B0FC"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_video">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="09 jun\n 10:30 PM"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/rectangle_test_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Meeting\n123 456 789"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:background="@drawable/rectangle_calander"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="#22B0FC"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_video">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="09 jun\n 10:30 PM"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/rectangle_test_meeting"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Meeting\n123 456 789"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:background="@drawable/rectangle_calander"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="#22B0FC"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#22B0FC">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_bottom_meeting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Meetings"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_contact"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Contacts"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_feather_settings"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Settings"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

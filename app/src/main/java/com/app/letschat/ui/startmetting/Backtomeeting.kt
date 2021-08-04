@@ -8,13 +8,20 @@ import com.app.letschat.R
 
 class Backtomeeting:AppCompatActivity() {
     lateinit var ll_schedule:LinearLayout
+    lateinit var ll_back_to_meeting:LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_back_to_meeting)
         ll_schedule=findViewById(R.id.ll_schedule)
+        ll_back_to_meeting=findViewById(R.id.ll_back_to_meeting)
         ll_schedule.setOnClickListener({
             val i=Intent(this,ScheduleMeeting::class.java)
             startActivity(i)
         })
+        ll_back_to_meeting.setOnClickListener({
+            val i=Intent(this,Meetingdetails::class.java)
+            startActivity(i)
+        })
+
     }
 }

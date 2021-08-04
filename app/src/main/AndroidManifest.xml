@@ -30,6 +30,11 @@
         <activity android:name=".ui.startmetting.Backtomeeting"></activity>
         <activity android:name=".ui.startmetting.ScheduleMeeting"></activity>
         <activity android:name=".ui.Contact"/>
+        <activity android:name=".ui.startmetting.Meetingdetails"/>
+        <activity android:name=".ui.startmetting.Home1Activity"/>
+        <activity android:name=".ui.startmetting.Meeting"/>
+
+
 
 
 
