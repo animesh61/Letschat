@@ -340,6 +340,7 @@
         android:layout_alignParentBottom="true"
         android:background="#22B0FC">
         <LinearLayout
+            android:id="@+id/ll_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
@@ -365,6 +366,7 @@
                 android:text="Home"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_meetings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
@@ -389,6 +391,7 @@
                 android:text="Meetings"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_contacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
@@ -413,6 +416,7 @@
                 android:text="Contacts"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"

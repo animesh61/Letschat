@@ -8,36 +8,35 @@ import com.app.letschat.R
 import com.app.letschat.ui.forgotpassword.HomeActivity
 import com.app.letschat.ui.startmetting.Meeting
 
-class Contact:AppCompatActivity() {
+class Settings:AppCompatActivity() {
     lateinit var ll_home:LinearLayout
-    lateinit var ll_meetings:LinearLayout
+    lateinit var ll_meeting:LinearLayout
     lateinit var ll_contacts:LinearLayout
-    lateinit var ll_settings:LinearLayout
+    lateinit var ll_seetings:LinearLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contact)
+        setContentView(R.layout.activity_seetings)
         ll_home=findViewById(R.id.ll_home)
-        ll_meetings=findViewById(R.id.ll_meetings)
+        ll_meeting=findViewById(R.id.ll_meeting)
         ll_contacts=findViewById(R.id.ll_contacts)
-        ll_settings=findViewById(R.id.ll_settings)
-
+        ll_seetings=findViewById(R.id.ll_seetings)
         ll_home.setOnClickListener({
-            val i=Intent(this,HomeActivity::class.java)
+            val i= Intent(this, HomeActivity::class.java)
             startActivity(i)
         })
-        ll_meetings.setOnClickListener({
-            val i=Intent(this,Meeting::class.java)
+        ll_meeting.setOnClickListener({
+            val i= Intent(this, Meeting::class.java)
             startActivity(i)
         })
         ll_contacts.setOnClickListener({
-            val i=Intent(this,Contact::class.java)
+            val i= Intent(this,Contact::class.java)
             startActivity(i)
         })
-        ll_settings.setOnClickListener({
-            val i=Intent(this,Settings::class.java)
+        ll_seetings.setOnClickListener({
+            val i= Intent(this,Settings::class.java)
             startActivity(i)
         })
-
 
 
     }

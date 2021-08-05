@@ -33,6 +33,7 @@
         <activity android:name=".ui.startmetting.Meetingdetails"/>
         <activity android:name=".ui.startmetting.Home1Activity"/>
         <activity android:name=".ui.startmetting.Meeting"/>
+        <activity android:name=".ui.Settings"/>
 
 
 

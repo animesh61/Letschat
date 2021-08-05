@@ -12,10 +12,10 @@ class ScheduleMeeting:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule_meeting)
-        ll_date=findViewById(R.id.ll_date)
-        ll_date.setOnClickListener({
-            val i=Intent(this,Contact::class.java)
-            startActivity(i)
-        })
+      //  ll_date=findViewById(R.id.ll_date)
+//        ll_date.setOnClickListener({
+//            val i=Intent(this,Contact::class.java)
+//            startActivity(i)
+//        })
     }
 }

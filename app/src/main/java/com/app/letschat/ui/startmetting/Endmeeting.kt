@@ -13,10 +13,10 @@ class Endmeeting:AppCompatActivity() {
         setContentView(R.layout.activity_live_meeting)
         btn_endmeeting=findViewById(R.id.btn_endmeeting)
 
-        btn_endmeeting.setOnClickListener{
-            val i= Intent(this,JoinMeeting::class.java)
-            startActivity(i)
-
-        }
+//        btn_endmeeting.setOnClickListener{
+//            val i= Intent(this,JoinMeeting::class.java)
+//            startActivity(i)
+//
+//        }
     }
 }
