@@ -13,7 +13,7 @@ class EmailActivation:AppCompatActivity() {
         setContentView(R.layout.activity_email)
         btn_verify=findViewById(R.id.btn_verify)
         btn_verify.setOnClickListener{
-            val intent=Intent(this,ChangePasswordActivity::class.java)
+            val intent=Intent(this,Verifyotp::class.java)
             startActivity(intent)
         }
     }

@@ -28,6 +28,7 @@
             android:layout_gravity="center"/>
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginLeft="@dimen/_30sdp"
@@ -43,6 +44,7 @@
             android:textColorHint="#9097A5"
             android:background="@drawable/rectangle_email"/>
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginLeft="@dimen/_30sdp"

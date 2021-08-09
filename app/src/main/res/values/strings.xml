@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">LetsChat</string>
     <string name="landing_content">Join the most popular online meeting platform</string>
+    <string name="please_check_internet">Please check your internet connection and try again</string>
+    <string name="something_went_wrong">Something went wrong. Please try again later</string>
 </resources>
