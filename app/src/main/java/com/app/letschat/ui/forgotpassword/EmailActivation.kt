@@ -12,8 +12,11 @@ class EmailActivation:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_email)
         btn_verify=findViewById(R.id.btn_verify)
+        val otp=intent.getStringExtra("otp")
+
         btn_verify.setOnClickListener{
             val intent=Intent(this,Verifyotp::class.java)
+            intent.putExtra("otp",otp)
             startActivity(intent)
         }
     }

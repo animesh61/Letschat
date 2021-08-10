@@ -3,6 +3,7 @@ package com.app.letschat.ui.forgotpassword
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,7 @@ import com.app.letschat.model.SigninRequest
 import com.app.letschat.ui.login.Loginviewmodel
 import com.app.letschat.utils.ViewModelFactory
 import com.example.akaya.utils.AndroidUtility
+import com.example.akaya.utils.Prefs
 import com.example.akaya.utils.Status
 
 class ForgotPasswordActivity:AppCompatActivity() {
@@ -72,10 +74,19 @@ class ForgotPasswordActivity:AppCompatActivity() {
                     hideLoader()
                     val baseResponse = it.data
                     val errorCode = baseResponse?.status?.error_code
+                    val otp=baseResponse?.result.toString()
+
                     when {
                         (errorCode == 0) -> {
                             AndroidUtility.showToast(this, baseResponse.status?.message?:"")
-                            movetoemailActivitation()
+                            val i=Intent(this,EmailActivation::class.java)
+                            i.putExtra("otp",otp)
+                            Prefs.with(this).write("email", et_forgot_email.text.toString().trim())
+
+                            Log.e("forgot_otp", otp)
+
+                            startActivity(i)
+
 
                         }
                         (errorCode == 1) -> {
@@ -123,6 +134,7 @@ class ForgotPasswordActivity:AppCompatActivity() {
 
             this.source="MOB"
             this.email = email
+
         }
 
         viewModel.requestforgotpassword(this, forgotpasswordRequest)

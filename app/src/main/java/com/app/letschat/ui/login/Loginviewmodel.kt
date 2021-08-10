@@ -7,12 +7,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.app.letschat.api.ApiHelper
 import com.app.letschat.model.BaseWrapperResponse
+import com.app.letschat.model.LoginResult
 import com.app.letschat.model.SigninRequest
 import com.example.akaya.utils.Resource
 import kotlinx.coroutines.launch
 
 class Loginviewmodel(private val apiHelper: ApiHelper): ViewModel() {
-    private var signinLivedata= MutableLiveData<Resource<BaseWrapperResponse>>()
+    private var signinLivedata= MutableLiveData<Resource<LoginResult>>()
 
     fun requestsignin(mContext: Context, signinRequest: SigninRequest){
         viewModelScope.launch {
@@ -28,7 +29,7 @@ class Loginviewmodel(private val apiHelper: ApiHelper): ViewModel() {
         }
     }
 
-    fun signinData(): LiveData<Resource<BaseWrapperResponse>> {
+    fun signinData(): LiveData<Resource<LoginResult>> {
         return signinLivedata
     }
 

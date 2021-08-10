@@ -16,6 +16,7 @@ import com.app.letschat.api.RetrofitBuilder
 import com.app.letschat.dialog.CustomLoaderDialog
 import com.app.letschat.model.SigninRequest
 import com.app.letschat.ui.forgotpassword.ForgotPasswordActivity
+import com.app.letschat.ui.forgotpassword.HomeActivity
 import com.app.letschat.ui.register.RegisterActivity
 import com.app.letschat.utils.ViewModelFactory
 import com.example.akaya.utils.AndroidUtility
@@ -45,6 +46,7 @@ class LoginActivity:AppCompatActivity() {
         mCustomLoaderDialog = CustomLoaderDialog(this)
 
         setUpViewModel()
+
         setupObserver()
 
 
@@ -86,10 +88,13 @@ class LoginActivity:AppCompatActivity() {
                 Status.SUCCESS -> {
                     hideLoader()
                     val baseResponse = it.data
-                    val errorCode = baseResponse?.status?.error_code
+                    val errorCode = baseResponse?.status?.error_code2
                     when {
                         (errorCode == 0) -> {
                             AndroidUtility.showToast(this, "Login Successfully !!")
+                                     val intent=Intent(this,HomeActivity::class.java)
+                                       startActivity(intent)
+
 
                         }
                         (errorCode == 1) -> {
@@ -138,7 +143,7 @@ class LoginActivity:AppCompatActivity() {
             }
         }
 
-        val signupRequest = SigninRequest().apply {
+        val signinRequest = SigninRequest().apply {
             val deviceId = Secure.getString(
                 getContentResolver(),
                 Secure.ANDROID_ID
@@ -151,7 +156,7 @@ class LoginActivity:AppCompatActivity() {
             this.password = password
         }
 
-        viewModel.requestsignin(this, signupRequest)
+        viewModel.requestsignin(this, signinRequest)
 
 
 

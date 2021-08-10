@@ -1,16 +1,20 @@
 package com.app.letschat.api
 
-import com.app.letschat.model.BaseWrapperResponse
-import com.app.letschat.model.ForgotpasswordRequest
-import com.app.letschat.model.SigninRequest
+import com.app.letschat.model.*
 
 class ApiHelperImpl(private val apiService: ApiService) : ApiHelper {
 
-    override suspend fun signin(msigninRequest: SigninRequest): BaseWrapperResponse =
+    override suspend fun signin(msigninRequest: SigninRequest): LoginResult =
         apiService.signin(msigninRequest)
 
     override suspend fun forgotpassword(mforgotpassword: ForgotpasswordRequest): BaseWrapperResponse =
     apiService.forgotpassword(mforgotpassword)
+
+    override suspend fun changepassword(mchangepassword: ChangepasswordRequest): ResetResult =
+        apiService.changepassword(mchangepassword)
+
+    override suspend fun register(msignuprequest: SignupRequest): RegisterResult =
+     apiService.register(msignuprequest)
 
 
 }

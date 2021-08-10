@@ -3,8 +3,10 @@ package com.app.letschat.utils
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.app.letschat.api.ApiHelper
+import com.app.letschat.ui.forgotpassword.Changepasswordviewmodel
 import com.app.letschat.ui.forgotpassword.ForgotpasswordViewmodel
 import com.app.letschat.ui.login.Loginviewmodel
+import com.app.letschat.ui.register.RegisterViewmodel
 
 class ViewModelFactory(private val apiHelper: ApiHelper) :
     ViewModelProvider.Factory {
@@ -15,6 +17,12 @@ class ViewModelFactory(private val apiHelper: ApiHelper) :
         }
         if (modelClass.isAssignableFrom(ForgotpasswordViewmodel::class.java)) {
             return ForgotpasswordViewmodel(apiHelper) as T
+        }
+        if (modelClass.isAssignableFrom(Changepasswordviewmodel::class.java)) {
+            return Changepasswordviewmodel(apiHelper) as T
+        }
+        if (modelClass.isAssignableFrom(RegisterViewmodel::class.java)) {
+            return RegisterViewmodel(apiHelper) as T
         }
 
 
