@@ -20,6 +20,7 @@ import com.app.letschat.ui.forgotpassword.HomeActivity
 import com.app.letschat.ui.login.Loginviewmodel
 import com.app.letschat.utils.ViewModelFactory
 import com.example.akaya.utils.AndroidUtility
+import com.example.akaya.utils.Prefs
 import com.example.akaya.utils.Status
 
 class RegisterActivity:AppCompatActivity() {
@@ -28,6 +29,7 @@ class RegisterActivity:AppCompatActivity() {
     lateinit var et_lname:EditText
     lateinit var et_email:EditText
     lateinit var et_password:EditText
+    lateinit var et_confirmpassword:EditText
     lateinit var btn_sign_up:Button
     private lateinit var viewModel: RegisterViewmodel
     lateinit var mCustomLoaderDialog: CustomLoaderDialog
@@ -42,6 +44,7 @@ class RegisterActivity:AppCompatActivity() {
         et_lname=findViewById(R.id.et_lname)
         et_email=findViewById(R.id.et_email)
         et_password=findViewById(R.id.et_password)
+        et_confirmpassword=findViewById(R.id.et_confirmpassword)
         btn_sign_up=findViewById(R.id.btn_sign_up)
         mCustomLoaderDialog = CustomLoaderDialog(this)
 
@@ -81,8 +84,10 @@ class RegisterActivity:AppCompatActivity() {
                     val errorCode = baseResponse?.status?.error_code3
                     when {
                         (errorCode == 0) -> {
-                            AndroidUtility.showToast(this, "Register Successfully !!")
-                            val intent= Intent(this, HomeActivity::class.java)
+                            AndroidUtility.showToast(this, baseResponse?.status?.message?:"")
+                            Prefs.with(this).write("email", et_email.text.toString().trim())
+
+                            val intent= Intent(this, RegisterVerifyotp::class.java)
                             startActivity(intent)
 
 
@@ -113,6 +118,7 @@ class RegisterActivity:AppCompatActivity() {
         val lname=et_lname.text.toString().trim()
         val email=et_email.text.toString().trim()
         val password=et_password.text.toString().trim()
+        val conpassword=et_confirmpassword.text.toString().trim()
 
 
         when {
@@ -143,6 +149,17 @@ class RegisterActivity:AppCompatActivity() {
                 AndroidUtility.showToast(this, "Password can't be blank")
                 return
             }
+            conpassword == "" -> {
+                AndroidUtility.showToast(this, "Confirm Password can't be blank")
+                return
+            }
+            password!=conpassword->{
+                AndroidUtility.showToast(this, "Password didn't match")
+                return
+
+            }
+
+
         }
 
         val signupRequest = SignupRequest().apply {

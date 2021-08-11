@@ -6,8 +6,8 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.app.letschat.R
 import com.app.letschat.ui.Contact
-import com.app.letschat.ui.Settings
 import com.app.letschat.ui.forgotpassword.HomeActivity
+import com.app.letschat.ui.profile.Settings
 
 class Backtomeeting:AppCompatActivity() {
     lateinit var ll_schedule:LinearLayout

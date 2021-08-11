@@ -6,7 +6,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.app.letschat.R
 import com.app.letschat.ui.Contact
-import com.app.letschat.ui.Settings
+import com.app.letschat.ui.profile.Settings
 import com.app.letschat.ui.startmetting.JoinMeeting
 import com.app.letschat.ui.startmetting.Meeting
 import com.app.letschat.ui.startmetting.ScheduleMeeting

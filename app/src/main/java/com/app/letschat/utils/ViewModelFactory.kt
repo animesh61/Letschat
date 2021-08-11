@@ -6,7 +6,9 @@ import com.app.letschat.api.ApiHelper
 import com.app.letschat.ui.forgotpassword.Changepasswordviewmodel
 import com.app.letschat.ui.forgotpassword.ForgotpasswordViewmodel
 import com.app.letschat.ui.login.Loginviewmodel
+import com.app.letschat.ui.profile.Profileviewmodel
 import com.app.letschat.ui.register.RegisterViewmodel
+import com.app.letschat.ui.register.Verifyotpmodel
 
 class ViewModelFactory(private val apiHelper: ApiHelper) :
     ViewModelProvider.Factory {
@@ -25,6 +27,12 @@ class ViewModelFactory(private val apiHelper: ApiHelper) :
             return RegisterViewmodel(apiHelper) as T
         }
 
+        if (modelClass.isAssignableFrom(Verifyotpmodel::class.java)) {
+            return Verifyotpmodel(apiHelper) as T
+        }
+        if (modelClass.isAssignableFrom(Profileviewmodel::class.java)) {
+            return Profileviewmodel(apiHelper) as T
+        }
 
 
         /*

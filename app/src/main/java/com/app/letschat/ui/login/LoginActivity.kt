@@ -20,6 +20,7 @@ import com.app.letschat.ui.forgotpassword.HomeActivity
 import com.app.letschat.ui.register.RegisterActivity
 import com.app.letschat.utils.ViewModelFactory
 import com.example.akaya.utils.AndroidUtility
+import com.example.akaya.utils.Prefs
 import com.example.akaya.utils.Status
 
 
@@ -89,10 +90,13 @@ class LoginActivity:AppCompatActivity() {
                     hideLoader()
                     val baseResponse = it.data
                     val errorCode = baseResponse?.status?.error_code2
+                    val user_id=baseResponse?.result?.data?.user_id
                     when {
                         (errorCode == 0) -> {
                             AndroidUtility.showToast(this, "Login Successfully !!")
-                                     val intent=Intent(this,HomeActivity::class.java)
+                            Prefs.with(this).write("user_id", user_id.toString())
+
+                            val intent=Intent(this,HomeActivity::class.java)
                                        startActivity(intent)
 
 

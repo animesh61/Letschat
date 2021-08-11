@@ -27,6 +27,7 @@
         <activity android:name=".ui.forgotpassword.Verifyotp"/>
         <activity android:name=".ui.forgotpassword.ChangePasswordActivity"></activity>
         <activity android:name=".ui.forgotpassword.HomeActivity"></activity>
+        <activity android:name=".ui.register.RegisterVerifyotp"></activity>
         <activity android:name=".ui.startmetting.Startmeeting"></activity>
         <activity android:name=".ui.startmetting.Endmeeting"></activity>
         <activity android:name=".ui.startmetting.JoinMeeting"></activity>
@@ -36,7 +37,8 @@
         <activity android:name=".ui.startmetting.Meetingdetails"/>
         <activity android:name=".ui.startmetting.Home1Activity"/>
         <activity android:name=".ui.startmetting.Meeting"/>
-        <activity android:name=".ui.Settings"/>
+        <activity android:name=".ui.profile.Settings"/>
+        <activity android:name=".ui.profile.EditProfile"/>
 
 
 

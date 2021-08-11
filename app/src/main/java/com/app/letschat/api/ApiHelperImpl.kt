@@ -16,5 +16,11 @@ class ApiHelperImpl(private val apiService: ApiService) : ApiHelper {
     override suspend fun register(msignuprequest: SignupRequest): RegisterResult =
      apiService.register(msignuprequest)
 
+    override suspend fun verifyregister(mverifyregisterRequest: verifyregisterRequest): VerifyregResult =
+    apiService.verifyregister(mverifyregisterRequest)
+
+    override suspend fun profile(mprofileRequest: profileRequest): ProfileResult =
+       apiService.profile(mprofileRequest)
+
 
 }

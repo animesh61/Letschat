@@ -12,6 +12,10 @@ interface ApiService {
     suspend fun changepassword(@Body mchangepasswordrequest:ChangepasswordRequest):ResetResult
     @POST("register")
     suspend fun register(@Body msignuprequest:SignupRequest):RegisterResult
+    @POST("activeEmail")
+    suspend fun verifyregister(@Body mverifyregisterRequest:verifyregisterRequest):VerifyregResult
+    @POST("profileDetails")
+    suspend fun profile(@Body mprofilerequest:profileRequest):ProfileResult
 
 
 }

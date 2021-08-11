@@ -6,6 +6,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.app.letschat.R
 import com.app.letschat.ui.forgotpassword.HomeActivity
+import com.app.letschat.ui.profile.Settings
 import com.app.letschat.ui.startmetting.Meeting
 
 class Contact:AppCompatActivity() {

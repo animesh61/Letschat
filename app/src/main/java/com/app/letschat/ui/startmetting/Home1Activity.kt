@@ -7,8 +7,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.letschat.R
 import com.app.letschat.ui.Contact
-import com.app.letschat.ui.Settings
 import com.app.letschat.ui.forgotpassword.HomeActivity
+import com.app.letschat.ui.profile.Settings
 
 class Home1Activity:AppCompatActivity() {
     lateinit var tv_start:TextView

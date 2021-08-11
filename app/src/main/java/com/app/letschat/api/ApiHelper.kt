@@ -9,6 +9,8 @@ interface ApiHelper {
     suspend fun forgotpassword(mforgotpassword:ForgotpasswordRequest):BaseWrapperResponse
     suspend fun changepassword(mchangepassword:ChangepasswordRequest):ResetResult
     suspend fun register(msignuprequest:SignupRequest):RegisterResult
+    suspend fun verifyregister(mverifyregisterRequest:verifyregisterRequest):VerifyregResult
+    suspend fun profile(mprofileRequest:profileRequest):ProfileResult
 
 
 }
