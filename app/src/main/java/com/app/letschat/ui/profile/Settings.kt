@@ -36,6 +36,17 @@ class Settings:AppCompatActivity() {
     private lateinit var viewModel: Profileviewmodel
     lateinit var mCustomLoaderDialog: CustomLoaderDialog
     var user_id1:String?=null
+    var fname:String?=null
+    var lname:String?=null
+    var email:String?=null
+    var company:String?=null
+    var department:String?=null
+    var jobtitle:String?=null
+    var address:String?=null
+    var phoneno:String?=null
+    var language:String?=null
+    var time_zone:String?=null
+    lateinit var ll_change_passwd:LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +59,7 @@ class Settings:AppCompatActivity() {
         tv_email=findViewById(R.id.tv_email)
         iv_profile=findViewById(R.id.iv_profile)
         iv_edit=findViewById(R.id.iv_edit)
+        ll_change_passwd=findViewById(R.id.ll_change_passwd)
         user_id1 = Prefs.with(this).read("user_id")
 
         mCustomLoaderDialog = CustomLoaderDialog(this)
@@ -74,8 +86,23 @@ class Settings:AppCompatActivity() {
             val i= Intent(this,Settings::class.java)
             startActivity(i)
         })
+        ll_change_passwd.setOnClickListener{
+            val i= Intent(this,Changepassword::class.java)
+            startActivity(i)
+
+        }
         iv_edit.setOnClickListener({
             val i= Intent(this,EditProfile::class.java)
+            i.putExtra("fname",fname)
+            i.putExtra("lname",lname)
+            i.putExtra("email",email)
+            i.putExtra("department",department)
+            i.putExtra("job_title",jobtitle)
+            i.putExtra("company",company)
+            i.putExtra("location",address)
+            i.putExtra("phone",phoneno)
+            i.putExtra("language",language)
+            i.putExtra("time_zone",time_zone)
             startActivity(i)
 
         })
@@ -117,9 +144,16 @@ class Settings:AppCompatActivity() {
                     hideLoader()
                     val baseResponse = it.data
                     val errorCode = baseResponse?.status?.error_code5
-                    val fname=baseResponse?.result?.data?.first_name
-                    val lname=baseResponse?.result?.data?.last_name
-                    val email=baseResponse?.result?.data?.email
+                     fname=baseResponse?.result?.data?.first_name
+                     lname=baseResponse?.result?.data?.last_name
+                     email=baseResponse?.result?.data?.email
+                    company=baseResponse?.result?.data?.company
+                    language=baseResponse?.result?.data?.language
+                    department=baseResponse?.result?.data?.department
+                    phoneno=baseResponse?.result?.data?.phone
+                    jobtitle=baseResponse?.result?.data?.job_title
+                    address=baseResponse?.result?.data?.address
+                    time_zone=baseResponse?.result?.data?.time_zone
                     val image=baseResponse?.result?.data?.profile_image
                     when {
                         (errorCode == 0) -> {

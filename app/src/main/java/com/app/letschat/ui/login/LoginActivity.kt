@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings.Secure
 import android.text.Html
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -30,6 +33,7 @@ class LoginActivity:AppCompatActivity() {
     lateinit var tv_forgotpassword:TextView
     lateinit var et_email:EditText
     lateinit var et_password:EditText
+    lateinit var iv_password:ImageView
     private lateinit var viewModel: Loginviewmodel
     lateinit var mCustomLoaderDialog: CustomLoaderDialog
 
@@ -43,6 +47,24 @@ class LoginActivity:AppCompatActivity() {
         tv_forgotpassword=findViewById(R.id.tv_forgotpassword)
         et_email=findViewById(R.id.et_email)
         et_password=findViewById(R.id.et_password)
+        iv_password=findViewById(R.id.iv_password)
+        iv_password.setOnClickListener{
+            if(et_password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                ((iv_password)).setImageResource(R.drawable.ic_password)
+
+                //Show Password
+                et_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }
+            else{
+                ((iv_password)).setImageResource(R.drawable.ic_password);
+
+                //Hide Password
+                et_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+            }
+
+        }
+
 
         mCustomLoaderDialog = CustomLoaderDialog(this)
 
@@ -90,14 +112,14 @@ class LoginActivity:AppCompatActivity() {
                     hideLoader()
                     val baseResponse = it.data
                     val errorCode = baseResponse?.status?.error_code2
-                    val user_id=baseResponse?.result?.data?.user_id
+                    val user_id = baseResponse?.result?.data?.user_id
                     when {
                         (errorCode == 0) -> {
                             AndroidUtility.showToast(this, "Login Successfully !!")
                             Prefs.with(this).write("user_id", user_id.toString())
 
-                            val intent=Intent(this,HomeActivity::class.java)
-                                       startActivity(intent)
+                            val intent = Intent(this, HomeActivity::class.java)
+                            startActivity(intent)
 
 
                         }

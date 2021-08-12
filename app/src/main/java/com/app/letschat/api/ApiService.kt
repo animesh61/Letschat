@@ -16,6 +16,10 @@ interface ApiService {
     suspend fun verifyregister(@Body mverifyregisterRequest:verifyregisterRequest):VerifyregResult
     @POST("profileDetails")
     suspend fun profile(@Body mprofilerequest:profileRequest):ProfileResult
+    @POST("profileDetailsUpdate")
+    suspend fun editprofile(@Body meditprofilerequest:editprofileRequest):EditProfileResult
+    @POST("changePassword")
+    suspend fun changeprofilepassword(@Body mchangeprofilepasswordrequest:changeprofilepasswordrequest):ChangepasswordResult
 
 
 }

@@ -150,5 +150,76 @@ data class Data2(
     @SerializedName("profile_image")
     var profile_image:String?=null)
 
+data class EditProfileResult(
+    @SerializedName("status")
+    var status: Status6? = null,
+    @SerializedName("result")
+    var result: Result6? = null
+)
+
+data class Status6(
+    @SerializedName("error_code")
+    var error_code6: Int=0,
+    @SerializedName("message")
+    var message: String?=null
+)
+data class Result6(
+    @SerializedName("data")
+    var data: Data3? = null)
+data class Data3(
+    @SerializedName("user_id")
+    var user_id: String? = null,
+    @SerializedName("role_id")
+    var role_id:String?=null,
+    @SerializedName("first_name")
+    var first_name: String? = null,
+    @SerializedName("last_name")
+    var last_name: String? = null,
+    @SerializedName("email")
+    var email: String? = null,
+    @SerializedName("phone")
+    var phone: String? = null ,
+    @SerializedName("company")
+    var company:String?=null,
+    @SerializedName("language")
+    var language:String?=null,
+    @SerializedName("department")
+    var department:String?=null,
+    @SerializedName("job_title")
+    var job_title:String?=null,
+    @SerializedName("address")
+    var address:String?=null,
+    @SerializedName("time_zone")
+    var time_zone:String?=null,
+    @SerializedName("personalMeetingID")
+    var personalMeetingID:String?=null,
+    @SerializedName("instantMeeting")
+    var instantMeeting:String?=null,
+    @SerializedName("hostKey")
+    var hostKey:String?=null,
+    @SerializedName("profile_image")
+    var profile_image:String?=null)
+data class ChangepasswordResult(
+    @SerializedName("status")
+    var status: Status7? = null,
+    @SerializedName("result")
+    var result: Result7? = null
+)
+
+
+data class Status7(
+    @SerializedName("error_code")
+    var error_code7: Int=0,
+    @SerializedName("message")
+    var message: String?=null
+)
+data class Result7(
+    @SerializedName("data")
+    var data:String?=null
+)
+
+
+
+
 
 

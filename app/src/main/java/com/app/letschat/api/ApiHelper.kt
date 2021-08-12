@@ -11,6 +11,8 @@ interface ApiHelper {
     suspend fun register(msignuprequest:SignupRequest):RegisterResult
     suspend fun verifyregister(mverifyregisterRequest:verifyregisterRequest):VerifyregResult
     suspend fun profile(mprofileRequest:profileRequest):ProfileResult
+    suspend fun editprofile(meditprofilerequest:editprofileRequest):EditProfileResult
+    suspend fun changeprofilepassword(mchangeprofilepasswordrequest:changeprofilepasswordrequest):ChangepasswordResult
 
 
 }

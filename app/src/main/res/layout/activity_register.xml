@@ -75,6 +75,9 @@
             android:paddingLeft="@dimen/_10sdp"
             android:textColorHint="#9097A5"
             android:background="@drawable/rectangle_email"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
@@ -85,7 +88,6 @@
             android:hint="Password"
             android:textColor="#9097A5"
             android:textSize="@dimen/_14sdp"
-            android:drawableRight="@drawable/ic_password"
             android:paddingRight="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="textPassword"
@@ -93,6 +95,19 @@
             android:paddingLeft="@dimen/_10sdp"
             android:textColorHint="#9097A5"
             android:background="@drawable/rectangle_email"/>
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_password"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_confirmpassword"
             android:layout_width="match_parent"
@@ -103,7 +118,6 @@
             android:hint="Confirm Password"
             android:textColor="#9097A5"
             android:textSize="@dimen/_14sdp"
-            android:drawableRight="@drawable/ic_password"
             android:paddingRight="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="textPassword"
@@ -111,7 +125,16 @@
             android:paddingLeft="@dimen/_10sdp"
             android:textColorHint="#9097A5"
             android:background="@drawable/rectangle_email"/>
+            <ImageView
+                android:id="@+id/iv_password1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_password"/>
 
+        </FrameLayout>
         <Button
             android:id="@+id/btn_sign_up"
             android:layout_width="match_parent"

@@ -39,6 +39,7 @@
         <activity android:name=".ui.startmetting.Meeting"/>
         <activity android:name=".ui.profile.Settings"/>
         <activity android:name=".ui.profile.EditProfile"/>
+        <activity android:name=".ui.profile.Changepassword"/>
 
 
 

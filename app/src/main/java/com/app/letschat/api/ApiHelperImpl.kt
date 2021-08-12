@@ -22,5 +22,12 @@ class ApiHelperImpl(private val apiService: ApiService) : ApiHelper {
     override suspend fun profile(mprofileRequest: profileRequest): ProfileResult =
        apiService.profile(mprofileRequest)
 
+    override suspend fun editprofile(meditprofilerequest: editprofileRequest):EditProfileResult=
+    apiService.editprofile(meditprofilerequest)
+
+    override suspend fun changeprofilepassword(mchangeprofilepasswordrequest: changeprofilepasswordrequest): ChangepasswordResult =
+        apiService.changeprofilepassword(mchangeprofilepasswordrequest)
+
+
 
 }

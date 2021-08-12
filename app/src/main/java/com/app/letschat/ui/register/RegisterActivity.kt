@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import android.text.Html
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -31,6 +34,8 @@ class RegisterActivity:AppCompatActivity() {
     lateinit var et_password:EditText
     lateinit var et_confirmpassword:EditText
     lateinit var btn_sign_up:Button
+    lateinit var iv_password:ImageView
+    lateinit var iv_password1:ImageView
     private lateinit var viewModel: RegisterViewmodel
     lateinit var mCustomLoaderDialog: CustomLoaderDialog
 
@@ -46,6 +51,8 @@ class RegisterActivity:AppCompatActivity() {
         et_password=findViewById(R.id.et_password)
         et_confirmpassword=findViewById(R.id.et_confirmpassword)
         btn_sign_up=findViewById(R.id.btn_sign_up)
+        iv_password=findViewById(R.id.iv_password)
+        iv_password1=findViewById(R.id.iv_password1)
         mCustomLoaderDialog = CustomLoaderDialog(this)
 
         setUpViewModel()
@@ -54,6 +61,42 @@ class RegisterActivity:AppCompatActivity() {
         btn_sign_up.setOnClickListener{
            registerApi()
         }
+
+        iv_password.setOnClickListener{
+            if(et_password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                ((iv_password)).setImageResource(R.drawable.ic_password)
+
+                //Show Password
+                et_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }
+            else{
+                ((iv_password)).setImageResource(R.drawable.ic_password);
+
+                //Hide Password
+                et_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+            }
+
+        }
+
+        iv_password1.setOnClickListener{
+            if(et_confirmpassword.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                ((iv_password1)).setImageResource(R.drawable.ic_password)
+
+                //Show Password
+                et_confirmpassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }
+            else{
+                ((iv_password1)).setImageResource(R.drawable.ic_password);
+
+                //Hide Password
+                et_confirmpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+            }
+
+        }
+
+
 
 
 
