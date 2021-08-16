@@ -11,15 +11,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <FrameLayout
+            android:id="@+id/fl_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/iv_edit_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_30sdp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_seeting_profile"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_seeting_profile"
+
+                />
             <ImageView
                 android:id="@+id/iv_camera_profile"
                 android:layout_width="wrap_content"
@@ -31,14 +34,14 @@
 
         </FrameLayout>
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_editname"
+            android:id="@+id/et_editfname"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:hint="Name"
+            android:hint="First Name"
             android:textSize="@dimen/_14sdp"
             android:textColor="#9097A5"
             android:fontFamily="@font/montserrat_regular"
@@ -47,6 +50,24 @@
             android:paddingLeft="@dimen/_10sdp"
             android:textColorHint="#9097A5"
             android:background="@drawable/rectangle_email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_editlname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="Last Name"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#9097A5"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9097A5"
+            android:background="@drawable/rectangle_email"/>
+
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_edit_department"
             android:layout_width="match_parent"

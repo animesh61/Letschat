@@ -66,10 +66,10 @@ class Changepassword:AppCompatActivity() {
                 et_new_passwd.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
             }
             else{
-                ((iv_password1)).setImageResource(R.drawable.ic_password);
+                ((iv_password1)).setImageResource(R.drawable.ic_password)
 
                 //Hide Password
-                et_new_passwd.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                et_new_passwd.setTransformationMethod(PasswordTransformationMethod.getInstance())
 
             }
 

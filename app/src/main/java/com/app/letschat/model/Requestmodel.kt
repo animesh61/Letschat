@@ -1,5 +1,7 @@
 package com.app.letschat.model
 
+import java.io.File
+
 data class SigninRequest(  var source:String?=null,
                            var device_token:String?=null,
                             var device_type:String?=null,
