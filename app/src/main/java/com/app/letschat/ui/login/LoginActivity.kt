@@ -183,10 +183,6 @@ class LoginActivity:AppCompatActivity() {
         }
 
         viewModel.requestsignin(this, signinRequest)
-
-
-
-
     }
 
 

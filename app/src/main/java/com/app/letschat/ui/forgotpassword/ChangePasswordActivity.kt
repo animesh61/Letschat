@@ -41,7 +41,6 @@ class ChangePasswordActivity:AppCompatActivity() {
         et_confirmpassword=findViewById(R.id.et_confirmpassword)
         iv_password=findViewById(R.id.iv_password)
         iv_password1=findViewById(R.id.iv_password1)
-
         otp=intent.getStringExtra("otp")
         email1 = Prefs.with(this).read("email")
 
